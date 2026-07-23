@@ -1,7 +1,24 @@
 aid: aardaia
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/aardaia.png
 name: aardaia
-description: aardaia is a company surfaced as a portfolio company of point-nine and added to the API Evangelist
-  network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: Aardaia is a Wageningen (Netherlands) agri-biotech startup that turns wild plant species
+  into new commercial crops through accelerated domestication, combining classical plant breeding with
+  modern genomics and AI rather than genetic modification. Its flagship is the aardaker, a nitrogen-fixing
+  legume-tuber that yields a naturally protein-rich crop (roughly 10g protein per 100g of fresh tuber)
+  without synthetic fertilizer. The company raised a EUR 5M seed round led by Point Nine in 2026. Aardaia
+  does not currently publish a public API, developer portal, or SDKs; this profile is maintained in the
+  API Evangelist network as a Point Nine portfolio lead.
 url: https://raw.githubusercontent.com/api-evangelist/aardaia/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -14,6 +31,13 @@ created: '2026-07-17'
 modified: '2026-07-17'
 tags:
 - Company
+- Agriculture
+- AgTech
+- Biotechnology
+- Plant Breeding
+- Genomics
+- Food
+- Netherlands
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -21,5 +45,14 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/aardaia-domain-security.yml
 - type: Website
   url: https://aardaia.com
+- type: PrivacyPolicy
+  url: https://aardaia.com/privacy
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
